@@ -24,7 +24,7 @@ public class NPC : MonoBehaviour
     void Update()
     {
         distance = Vector3.Distance(transform.position, targetPoint.position);
-        if(distance < 1f)
+        if(distance < 2f)
         {
             targetPoint = target[Random.Range(0, target.Length)];
         }
